@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "molecular-complexity"
+version = "0.1.0"
+description = "Python implementation of molecular complexity metrics by Proudfoot"
+authors = [
+    "Max Liu <max.liu@astrazeneca.com>",
+    "George Karageorgis <george.karageorgis@astrazeneca.com>",
+    "Gareth Howell <Gareth.Howell@astrazeneca.com>",
+]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "molecular_complexity"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21"
+rdkit = ">=2020.09"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
